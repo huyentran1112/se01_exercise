@@ -3,7 +3,7 @@
 
 input('Enter the beaker that you would like to move? ')
 def countFree(beaker1):
-    beaker1[-1] 
+    beaker1.colors[-1] 
 def topColor(beaker1):
     for i in reversed(range(beaker1)):
         if i > 0:
@@ -13,7 +13,7 @@ def colorAmount(beaker1):
         y = 0
         if i > 0:
             if i == y: 
-                return count(i) in beaker
+                return beaker1.colors.count(i)
             else:
                 y = i
         else:
@@ -42,6 +42,8 @@ class Beaker:
 beaker1 = Beaker("1", [1], 3, move)
 beaker2 = Beaker("2", [2, 1, 2], 3, move)
 beaker3 = Beaker("3", [2, 1], 3, move)
+
+beaker1.move(beaker1, beaker3)
 
 beaker1.move(beaker1, beaker3)
 
