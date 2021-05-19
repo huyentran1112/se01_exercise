@@ -12,7 +12,7 @@ def colorAmount(beaker1):
     for i in reversed(range(beaker1)):
         y = 0
         if i > 0:
-            if i = y: 
+            if i == y: 
                 return count(i) in beaker
             else:
                 y = i
