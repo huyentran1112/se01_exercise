@@ -43,12 +43,4 @@ beaker1 = Beaker("1", [1], 3, move)
 beaker2 = Beaker("2", [2, 1, 2], 3, move)
 beaker3 = Beaker("3", [2, 1], 3, move)
 
-beaker1.move(beaker1, beaker3)
-
-beaker1.move(beaker1, beaker3)
-
-print(beaker1.name + ":" + string(beaker1.colors))
-print(beaker2.name + ":" + string(beaker2.colors))
-print(beaker3.name + ":" + string(beaker3.colors))
-
-
+beaker1.move(beaker1, beaker2)
